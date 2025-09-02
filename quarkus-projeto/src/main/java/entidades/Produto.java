@@ -19,6 +19,8 @@ public class Produto {
 
     public Double preco;
 
+    public Integer quantidade;
+
     public LocalDate validade;
 
     @ManyToOne
