@@ -56,3 +56,35 @@ insert into Cliente (cpf, nome) values ('77788899900', 'Felipe Oliveira');
 insert into Cliente (cpf, nome) values ('88899900011', 'Beatriz Martins');
 insert into Cliente (cpf, nome) values ('99900011122', 'Renato Alves');
 insert into Cliente (cpf, nome) values ('00011122233', 'Tatiane Ferreira');
+
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (500, 2, 1);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (300, 2, 2);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (900, 1, 3);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (600, 2, 4);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (3500, 1, 5); 
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (2400, 2, 6); 
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (1600, 2, 7);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (400, 1, 8);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (400, 2, 9);
+insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (900, 2, 10);
+
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (1, '2025-09-01 10:00:00', 500, 2, 1, 1);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (2, '2025-09-01 11:30:00', 150, 1, 2, 2);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (3, '2025-09-01 14:15:00', 1200, 2, 3, 3);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (4, '2025-09-02 09:45:00', 3500, 1, 4, 4);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (5, '2025-09-02 13:20:00', 1800, 3, 5, 5);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (6, '2025-09-03 16:10:00', 200, 1, 6, 6);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (7, '2025-09-03 18:00:00', 1600, 2, 7, 7);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (8, '2025-09-04 12:00:00', 900, 1, 8, 8);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (9, '2025-09-04 15:30:00', 600, 2, 9, 9);
+insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
+VALUES (10, '2025-09-04 19:00:00', 2400, 3, 10, 10);
