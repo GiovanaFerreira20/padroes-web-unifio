@@ -88,3 +88,30 @@ insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo,
 VALUES (9, '2025-09-04 15:30:00', 600, 2, 9, 9);
 insert into Venda (codigo, horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) 
 VALUES (10, '2025-09-04 19:00:00', 2400, 3, 10, 10);
+
+
+
+INSERT INTO Disponibilidade (dia_semana, hora_inicio, hora_fim) VALUES ('Segunda-feira', '08:00:00', '17:00:00');
+
+INSERT INTO Disponibilidade (dia_semana, hora_inicio, hora_fim) VALUES ('Terca-feira', '08:00:00', '17:00:00');
+
+INSERT INTO Disponibilidade (dia_semana, hora_inicio, hora_fim) VALUES ('Quarta-feira', '08:00:00', '17:00:00');
+
+INSERT INTO Disponibilidade (dia_semana, hora_inicio, hora_fim) VALUES ('Quinta-feira', '09:00:00', '18:00:00');
+
+INSERT INTO Disponibilidade (dia_semana, hora_inicio, hora_fim) VALUES ('Sexta-feira', '09:00:00', '18:00:00');
+
+INSERT INTO Disponibilidade (dia_semana, hora_inicio, hora_fim) VALUES ('Sabado', '09:00:00', '13:00:00');
+
+
+INSERT INTO Notificacoes (tipo_notificacao, mensagem, data_notificacao, status, cliente_id) 
+VALUES ('Lembrete', 'Sua consulta foi agendada para amanhã.', '2025-11-13 10:00:00', 'Nao Lida', 1);
+
+INSERT INTO Notificacoes (tipo_notificacao, mensagem, data_notificacao, status, cliente_id) 
+VALUES ('Promocao', 'Aproveite 20% de desconto em serviços de barba!', '2025-11-12 09:00:00', 'Nao Lida', 2);
+
+INSERT INTO Notificacoes (tipo_notificacao, mensagem, data_notificacao, status, cliente_id) 
+VALUES ('Alerta', 'Seu pagamento foi confirmado com sucesso.', '2025-11-11 15:30:00', 'Lida', 1);
+
+INSERT INTO Notificacoes (tipo_notificacao, mensagem, data_notificacao, status, cliente_id) 
+VALUES ('Informativo', 'Novo horário de funcionamento aos sábados: 9h às 14h.', '2025-11-10 11:00:00', 'Lida', 3);
