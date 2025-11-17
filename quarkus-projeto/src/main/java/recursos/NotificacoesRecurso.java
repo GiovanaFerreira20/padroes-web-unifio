@@ -23,8 +23,6 @@ public class NotificacoesRecurso {
     @Transactional
     public void salvar(Notificacoes notificacoes) {
         notificacoes.persist();
-
-
     }
 
     @DELETE
@@ -44,7 +42,7 @@ public class NotificacoesRecurso {
     @Path("{id}")
     public void editar(@PathParam("id") Integer id, Notificacoes notificacao) {
         
-        // Busca pela Notificacao existente
+       
         Notificacoes notificacaoExistente = Notificacoes.findById(id);
 
         if (notificacaoExistente != null) {
@@ -54,7 +52,7 @@ public class NotificacoesRecurso {
             notificacaoExistente.mensagem = notificacao.mensagem;
             notificacaoExistente.data_notificacao = notificacao.data_notificacao;
             notificacaoExistente.status = notificacao.status;
-            notificacaoExistente.cliente = notificacao.cliente; // Atualiza a relação
+            notificacaoExistente.cliente = notificacao.cliente;
 
             notificacaoExistente.persist();
         }
