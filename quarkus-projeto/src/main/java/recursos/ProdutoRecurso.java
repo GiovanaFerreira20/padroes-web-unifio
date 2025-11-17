@@ -8,6 +8,7 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 
@@ -33,6 +34,23 @@ public class ProdutoRecurso {
 
         if (produto != null) {
             produto.delete();
+        }
+    }
+
+    @PUT
+    @Transactional
+    @Path("{codigo}")
+    public void editar (@PathParam("codigo") Integer codigo, Produto produto){
+        Produto produtoexistente = Produto.findById(codigo);
+
+        if(produtoexistente != null) {
+            produtoexistente.nome = produto.nome;
+            produtoexistente.quantidade = produto.quantidade;
+            produtoexistente.preco = produto.preco;
+            produtoexistente.categoria = produto.categoria;
+            produtoexistente.fabricante = produto.fabricante;
+
+            produtoexistente.persist();
         }
     }
 }
