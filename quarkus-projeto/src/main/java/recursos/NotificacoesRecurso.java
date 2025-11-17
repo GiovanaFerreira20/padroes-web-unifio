@@ -47,7 +47,6 @@ public class NotificacoesRecurso {
 
         if (notificacaoExistente != null) {
             
-            // Atualiza todos os campos da entidade
             notificacaoExistente.tipo_notificacao = notificacao.tipo_notificacao;
             notificacaoExistente.mensagem = notificacao.mensagem;
             notificacaoExistente.data_notificacao = notificacao.data_notificacao;
